@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Justice</title>
+
+    <!-- daisyui cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@800&family=Poppins&display=swap"
+        rel="stylesheet">
+
+    <style>
+        .font-poppins {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .font-eb {
+            font-family: 'EB Garamond', serif;
+        }
+
+        .primary-description {
+            color: #707070;
+            text-align: center;
+            font-family: 'Poppins';
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 26px;
+        }
+    </style>
+    <!-- tailwind custom color -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary-color': '#B68C5A',
+                    }
+                }
+            }
+        }
+    </script>
+
+
+</head>
+
+<body class="space-y-7 md:space-y-16 lg:space-y-[120px]">
+    <header class="container max-w-[1170px] mx-auto px-5">
+        <!-- navbar section start -->
+        <nav class="lg:mt-12 mb-12 font-poppins">
+
+            <div class="navbar bg-base-100 justify-between">
+
+                <div class="flex justify-between w-full lg:w-36">
+
+                    <div class=" ">
+
+                        <img src="./images/logo2.png" alt="" class="h-full w-full">
+
+                    </div>
+
+                    <div class="dropdown">
+
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+
+                        </div>
+
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content w-44 right-0 mt-3 z-[1] p-2 shadow bg-base-100 rounded-box  ">
+                            <li><a>Free Consultation</a></li>
+                            <li><a>Home</a></li>
+                            <li><a>Services</a></li>
+                            <li><a>Cases</a></li>
+                            <li><a>Blog</a></li>
+                            <li><a>Contact Us</a></li>
+                        </ul>
+
+                    </div>
+
+                </div>
+
+                <div class=" hidden lg:flex">
+
+                    <ul class="menu menu-horizontal px-1">
+                        <li><a class="primary-description">Home <svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                    height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M8.25 4.5L15.75 12L8.25 19.5" stroke="#707070" stroke-width="1.5"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg></a></li>
+                        <li><a class="primary-description">Services <svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                    height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M8.25 4.5L15.75 12L8.25 19.5" stroke="#707070" stroke-width="1.5"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg></a></li>
+                        <li><a class="primary-description">Cases <svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                    height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M8.25 4.5L15.75 12L8.25 19.5" stroke="#707070" stroke-width="1.5"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg></a></li>
+                        <li><a class="primary-description">Blog <svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                    height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M8.25 4.5L15.75 12L8.25 19.5" stroke="#707070" stroke-width="1.5"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg></a></li>
+                        <li><a class="primary-description">Contact Us <svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                    height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M8.25 4.5L15.75 12L8.25 19.5" stroke="#707070" stroke-width="1.5"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg></a></li>
+                    </ul>
+
+                </div>
+
+                <div class=" hidden lg:flex h-16 w-[220px]">
+                    <a class="btn text-white p-0 w-full h-full bg-[#B68C5A]">Free Consultation</a>
+                </div>
+
+            </div>
+        </nav>
+        <!-- navbar section end -->
+
+        <!-- banner section start -->
+        <div class="hero h-full md:h-[350px] lg:min-h-[550px] rounded-lg bg-center bg-cover overflow-hidden"
+            style="background-image: url('./images/banner.png');">
+            <div class="rounded-lg hero-overlay bg-opacity-60"></div>
+            <div class="hero-content text-center text-neutral-content flex-col">
+                <div class="">
+                    <h1 class="mb-6 text-white max-w-[668px] mx-auto text-4xl lg:text-7xl font-bold font-eb">We Provide Effective Legal Solutions</h1>
+                    <p class="mb-5 max-w-[679px] mx-auto primary-description text-[#E7E7E7]">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+                </div>
+                <div class="font-poppins gap-3 lg:gap-6 flex flex-wrap justify-center">
+                    <input class="h-10 lg:h-16 lg:w-[500px] pl-4 lg:p-5 rounded-lg" type="search" placeholder="Search your services">
+                    <button class="h-10 w-[70px] lg:h-16 lg:w-[150px] rounded-lg bg-primary-color text-white font-medium">Search</button>
+                </div>
+            </div>
+        </div>
+        <!-- banner section end -->
+    </header>
+    <main class="container max-w-[1170px] mx-auto">
+
+    </main>
+    <footer class="container mx-auto">
+
+    </footer>
+</body>
+
+</html>
